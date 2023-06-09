@@ -1,3 +1,5 @@
+
+# apps/jokedb/models.py
 from django.db import models
 
 
