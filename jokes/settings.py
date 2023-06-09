@@ -15,7 +15,7 @@ import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.append(str(BASE_DIR / 'apps'))
+sys.path.append(str(BASE_DIR / 'apps'))  ##### TODO: ADD THIS LINE TO MAKE DJANGO FIND THE JOKE APP
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jokedb',
+    'jokedb', ### TODO: ADD THIS LINE TO ENABLE THE JOKE APP
 ]
 
 MIDDLEWARE = [
