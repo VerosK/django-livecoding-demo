@@ -1,9 +1,11 @@
 {# apps/jokedb/templates/jokedb/joke_view.html #}
 
 <h2>Joke: {{ the_joke.pk }}
-{% if the_joke.is_profane %}}
+
+{% if the_joke.is_profane %}
 <b style="color: red">(PROFANE)</b>
 {% endif %}
+
 </h2>
 
 <p>{{ the_joke.text }}</p>
